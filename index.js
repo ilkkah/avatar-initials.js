@@ -20,7 +20,7 @@ module.exports = function (options) {
         bgcolor = colors[colorIndex]
     }
 
-    var svg = '<svg xmlns="http://www.w3.org/2000/svg" style="background-color:'+bgcolor+';" viewBox="0 0 200 200" width="200" height="200"><text style="letter-spacing: -6px; font-weight:400;" font-size="75" x="50%" y="50%" dy="0.35em" pointer-events="auto" fill="#ffffffff" font-family="Georgia,serif" text-anchor="middle">'+initials+'</text></svg>';
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" style="background-color:'+bgcolor+';" viewBox="0 0 200 200" width="200" height="200"><text style="font-weight:400;" font-size="75" x="50%" y="50%" dy="0.35em" pointer-events="auto" fill="#ffffffff" font-family="Georgia,serif" text-anchor="middle">'+initials+'</text></svg>';
 
     return 'data:image/svg+xml;base64,' + Buffer.from(svg).toString('base64');
 };
